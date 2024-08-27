@@ -1,0 +1,40 @@
+#container{
+    height: 100vh;
+}
+#stories img{
+    border-radius: 50%;
+    border: 2px solid red;
+}
+#stories{
+    overflow: auto;
+}
+a
+{
+    color: black;
+}
+#profile_pic_name{
+    height: 70px;
+}
+#post_image{
+    justify-content: center;
+    width: 80%;
+}
+#right_profile_pic{
+    border-radius: 50%;
+    height: 80px;
+}
+#switch_profile{
+    justify-content: space-between;
+}
+#suggest_profile{
+    justify-content: space-between;
+}
+.like{
+    height: 30px;
+}
+.comment{
+    height:25px;
+}
+.share{
+    height: 25px;
+}
