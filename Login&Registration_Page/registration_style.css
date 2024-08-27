@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(./assets/mountains_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form{
+    box-shadow: 1px 5px 40px #ffffff;
+}
+#title_ h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #284845;
+    font-weight: bold;
+}
+.section_{
+    opacity: 1.0;
+}

@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+#title_{
+  margin-top: 50px;
+  justify-content: center;
+}
+body{
+    background: url(./assets/canyon_bg.jpg);
+    font-family: 'Poppins', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form{
+    border-radius: 20px;
+    margin-top: 150px ;
+    width: 24% ;
+    background: transparent;
+    padding: 50px;
+    box-shadow: 1px 5px 40px #d5d5d5;
+}
+.btn-primary{
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    background: #5d6721;   
+}
+.form-control{
+    color: rgba(253, 253, 253, 0.87);
+    border-bottom-color: rgba(0,0,0,.42);
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 4px 4px 0 0;
+    }
+ h4{
+    color: white;
+    font-size: 2rem ;
+    font-weight: 700;
+ }  
+ .form-label{
+    color:white;
+    font-weight: 800 ;
+ }
+ .form-check-label{
+    color: white;
+ }
+ #emailHelp{
+    color: white;
+ }
