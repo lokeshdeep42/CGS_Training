@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container-fluid p-5">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="logo" style="height: 5rem; width: 5rem">
+          <img
+            src="./assets/company-logo.jpg"
+            class="img-fluid h-100 w-100"
+            alt="Logo"
+          />
+        </div>
+        <div class="address text-end">
+          <p>
+            Ajile Traing<br />
+            Hyderabad,Kphb, 77002
+          </p>
+        </div>
+      </div>
+
+      <h3 class="mt-5 font-weight-bold">Student Registration Form</h3>
+
+      <div class="accordion w-70 my-1" id="accordionExample">
+        <div class="accordion-item my-4">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne"
+              aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseOne"
+            >
+              Basic Information
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col-12 mb-4">
+                  <div
+                    class="upload-profile"
+                    style="
+                      width: 7rem;
+                      height: 7rem;
+                      border-radius: 50%;
+                      position: relative;
+                      border: 1px solid black;
+                    "
+                  >
+                    <input type="file" id="fileInput" style="display: none" />
+                    <div
+                      class="pen"
+                      style="
+                        width: 2rem;
+                        height: 2rem;
+                        position: absolute;
+                        top: 70%;
+                        left: 65%;
+                        cursor: pointer;
+                      "
+                    >
+                      <img
+                        src="assets/pen-solid.svg"
+                        style="height: 100%; width: 100%; cursor: pointer"
+                        onclick="document.getElementById('fileInput').click()"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-4 my-2">
+                  <label for="firstname" class="form-label">First Name</label>
+                  <input type="text" id="firstname" class="form-control" />
+                </div>
+                <div class="col-4 my-2">
+                  <label for="middlename" class="form-label">Middle Name</label>
+                  <input type="text" id="middlename" class="form-control" />
+                </div>
+                <div class="col-4 my-2">
+                  <label for="lastname" class="form-label">Last Name</label>
+                  <input type="text" id="lastname" class="form-control" />
+                </div>
+
+                <div class="col-6 my-2">
+                  <label for="studentnumber" class="form-label"
+                    >Student Number</label
+                  >
+                  <input type="text" id="studentnumber" class="form-control" />
+                </div>
+                <div class="col-6 my-2">
+                  <label for="yearlevel" class="form-label">Year Level</label>
+                  <select id="yearlevel" class="form-select">
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                  </select>
+                </div>
+
+                <div class="col-6 my-2">
+                  <label for="degreeprogram" class="form-label"
+                    >Degree Program</label
+                  >
+                  <select id="degreeprogram" class="form-select">
+                    <option value="">BTech</option>
+                    <option value="">BCom</option>
+                    <option value="">MBA</option>
+                  </select>
+                </div>
+
+                <div class="col-6 my-2">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" id="email" class="form-control" />
+                </div>
+
+                <div class="col-12 my-2">
+                  <label for="present_address" class="form-label"
+                    >Present Address</label
+                  >
+                  <input
+                    type="text"
+                    id="present_address"
+                    class="form-control"
+                  />
+                </div>
+
+                <div class="col-6 my-2">
+                  <input type="text" id="city" class="form-control" />
+                  <label for="city" class="form-label">City</label>
+                </div>
+
+                <div class="col-6 my-2">
+                  <input type="text" id="state" class="form-control" />
+                  <label for="state" class="form-label">State</label>
+                </div>
+
+                <div class="col-6 my-2">
+                  <input type="text" id="zipcode" class="form-control" />
+                  <label for="zipcode" class="form-label">Postal/ZipCode</label>
+                </div>
+                <div class="col-6 my-2">
+                  <select id="country" class="form-select">
+                    <option value="">India</option>
+                    <option value="">United States</option>
+                    <option value="">United Kingdom</option>
+                  </select>
+                  <label for="country" class="form-label">Country</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Accademic Background
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <div class="d-flex flex-column justify-content-start gap-4">
+                <div class="col-3">
+                  <label for="school_name" class="form-label"
+                    >High School Name</label
+                  >
+                  <input type="text" id="school_name" class="form-control" />
+                </div>
+
+                <div class="container m-0">
+                  <h2 class="mb-4">Upload File</h2>
+                  <div class="mb-3">
+                    <label for="formFile" class="form-label"
+                      >Choose a file</label
+                    >
+                    <input class="form-control" type="file" id="formFile" />
+                  </div>
+                </div>
+
+                <div class="col-3">
+                  <label for="other_activities" class="form-label"
+                    >Other Extra Curricular Activities</label
+                  >
+                  <input
+                    type="text"
+                    id="other_activities"
+                    class="form-control"
+                  />
+                </div>
+
+                <label for="participation" class="form-label"
+                  >Extra Curricular</label
+                >
+                <div class="row">
+                  <div class="col-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Student Council
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="col-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Class Officer
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Club/Organization
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Varsity Player
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col-10">
+          <p class="font-weight-bold">
+            Already Have An Account? Click
+            <span class="text-warning">here</span>
+          </p>
+        </div>
+
+        <button class="btn btn-primary btn-lg float-end mt-4 mb-4 col-2">
+          Register
+        </button>
+      </div>
+    </div>
+
+    <script src="p-form.js"></script>
+    <script
+      src="./Bootstrap/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>
