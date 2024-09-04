@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Game</title>
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 class="text-center py-4">Election Game</h1>
+        <div class="row justify-content-center px-5">
+            <div class="col-md-3">
+                <div class="card rounded-4 shadow p-3 bg-light bg-opacity-75">
+                    <div class="card-body text-center">
+                        <div class="party-logo d-flex">
+                          <img src="./assets/images/tdp.png" alt="tdp" class="" width="100%">
+                        </div>
+                        <h5 class="card-title pt-4">TDP</h5>
+                        <p class="card-text display-6">Votes: <span id="tdp-votes">0</span></p>
+                        <button class="btn btn-primary vote-button rounded-4" id="vote-tdp"><audio src="./assets/audios/tdp (mp3cut.net).mp3"></audio>Vote for TDP</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card rounded-4 shadow p-3 bg-light bg-opacity-75">
+                    <div class="card-body text-center">
+                        <div class="party-logo d-flex">
+                            <img src="./assets/images/ysrcp.jpeg" alt="" width="" >
+                            
+                        </div>
+                        <h5 class="card-title pt-4">YSRCP</h5>
+                        <p class="card-text display-6">Votes: <span id="ysrcp-votes">0</span></p>
+                        <button class="btn btn-primary vote-button rounded-4" id="vote-ysrcp">Vote for YSRCP</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card rounded-4 shadow p-3 bg-light bg-opacity-75">
+                    <div class="card-body text-center">
+                        <div class="party-logo d-flex">
+                            <img src="./assets/images/psp_logo.jpeg" alt="" width="" >
+                            
+                        </div>
+                        <h5 class="card-title pt-4">Praja Shanti Party</h5>
+                        <p class="card-text display-6">Votes: <span id="psp-votes">0</span></p>
+                        <button class="btn btn-primary vote-button rounded-4" id="vote-psp">Vote for PSP</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card rounded-4 shadow p-3 bg-light bg-opacity-75">
+                    <div class="card-body text-center">
+                        <div class="party-logo d-flex">
+                            <img src="./assets/images/janasena.png" alt="" width="" >
+                            
+                        </div>
+                        <h5 class="card-title pt-4">Janasena</h5>
+                        <p class="card-text display-6">Votes: <span id="janasena-votes">0</span></p>
+                        <button class="btn btn-primary vote-button rounded-4" id="vote-janasena">Vote for Janasena</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-success rounded-4" id="finish-voting">Finish Voting</button>
+            <div id="winner" ></div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
+
