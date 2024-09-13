@@ -1,0 +1,39 @@
+body {
+    background: rgb(231, 231, 231);
+    color: Black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 500px;
+}
+
+.step {
+    display: none;
+}
+
+.step.active {
+    display: block;
+}
+
+.btn-next {
+    float: right;
+    margin-top: 10px;
+}
+
+#submitButton {
+    display: none;
+    float: right;
+}
+
+#result {
+    display: none;
+}
