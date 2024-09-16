@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Bootstrap_Full/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="text-center pt-5 fs-1 fw-bold">Tic Tac Toe</div>
+    <div class="container pt-5">
+        <div class="row py-1">
+            <div class="col-md-4 p-1"><div class="box" id="0"></div></div>
+            <div class="col-md-4 p-1"><div class="box" id="1"></div></div>
+            <div class="col-md-4 p-1"><div class="box" id="2"></div></div>
+        </div>
+        <div class="row py-1">
+            <div class="col-md-4 p-1"><div class="box" id="3"></div></div>
+            <div class="col-md-4 p-1"><div class="box" id="4"></div></div>
+            <div class="col-md-4 p-1"><div class="box" id="5"></div></div>
+        </div>
+        <div class="row py-1">
+            <div class="col-md-4 p-1"><div class="box" id="6"></div></div>
+            <div class="col-md-4 p-1"><div class="box" id="7"></div></div>
+            <div class="col-md-4 p-1"><div class="box" id="8"></div></div>
+        </div>
+    </div>
+    <div class="text-center pt-3 fs-2" id="turn-indicator">Player X's Turn</div>
+    <div class="text-center pt-2 fs-3" id="game-status"></div>
+    <div class="text-center pt-3">
+        <button id="restart-btn" class="btn btn-danger" style="display: none;">Restart Game</button>
+    </div>
+    <script src="/Bootstrap_Full/js/bootstrap.bundle.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
