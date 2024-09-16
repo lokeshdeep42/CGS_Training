@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User Profile</title>
+    <link href="/Bootstrap_Full/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container text-center bg-white shadow-lg rounded-3 p-2 border border-4 profile-card">
+        <div class="profile-header">
+            <img id="profile-pic" class="profile-pic mb-3" src="" alt="Profile Picture">
+            <h2 id="name-title" class="text-primary"></h2>
+        </div>
+        <div class="row mt-4 text-start">
+            <div class="col-md-6 mb-3">
+                <div class="info-div border border-black">
+                    <h5 class="text-secondary">Personal Info</h5>
+                    <p><strong>Email:</strong> <span id="email"></span></p>
+                    <p><strong>Date of Birth:</strong> <span id="dob"></span></p>
+                    <p><strong>Gender:</strong> <span id="gender"></span></p>
+                    <p><strong>Phone:</strong> <span id="phone"></span></p>
+                </div>
+            </div>
+            <div class="col-md-6 mt-3">
+                <div class="address-div border border-black">
+                    <h5 class="text-secondary">Address</h5>
+                    <p><strong>Location:</strong> <span id="address"></span></p>
+                </div>
+            </div>
+        </div>
+        <button id="next-btn" class="btn btn-outline-primary next-btn mt-4 shadow-sm">Next Profile</button>
+    </div>
+    <script src="./assets/script/script.js"></script>
+    <script src="/Bootstrap_Full/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
