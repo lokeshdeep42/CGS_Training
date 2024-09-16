@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header bg-primary text-white text-center">
+                <h2>Age Calculator</h2>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="calendarBox">Enter Your Date of Birth:</label>
+                    <input type="date" id="calendarBox" class="form-control">
+                </div>
+                <button class="btn btn-primary btn-block" onclick="calculateAge()">Calculate Age</button>
+                <div class="mt-4">
+                    <h4>Your Age is:</h4>
+                    <p id="ageOutput" class="text-info"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
