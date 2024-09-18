@@ -1,0 +1,223 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    flex-direction: column;
+}
+
+#wrapper {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    background-color: #003366;
+}
+
+#sidebar-wrapper {
+    width: 250px;
+    height: 100vh;
+    background-color: #003366;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: width 0.3s ease;
+}
+
+#brand {
+    cursor: pointer;
+}
+
+.sidebar-heading {
+    padding: 15px;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #00509e;
+    background: linear-gradient(135deg, #003366, #00509e);
+    color: #fff;
+    text-align: center;
+}
+
+.list-group-item {
+    background-color: #003366;
+    color: #e6f0ff;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 10px 15px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: #004080;
+    transform: scale(1.05);
+}
+
+.list-group-item.active {
+    background-color: #00509e;
+}
+
+#page-content-wrapper {
+    width: calc(100% - 250px);
+    padding: 20px;
+    background-color: #e6f0ff;
+    margin-bottom: 80px;
+    flex: 1;
+}
+
+#intro-text {
+    background: linear-gradient(100deg, white, #00509e);
+    border: 1px solid #00509e;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#intro-text h1 {
+    color: #003366;
+    font-size: 4rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#intro-text h4 {
+    color: #003366;
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+#intro-text p {
+    color: #003366;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+
+#albums {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.album-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.album-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.album-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.album-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.album-name {
+    font-size: 1.2rem;
+    color: #003366;
+    margin: 0;
+}
+
+#player {
+    padding-top: 10px;
+    background-color: #003366;
+    border-top: 1px solid #002244;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#player .d-flex {
+    justify-content: center;
+    align-items: center;
+}
+
+#player button {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(145deg, #0066cc, #00509e);
+    color: #fff;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background 0.3s ease;
+    margin: 0 15px;
+}
+
+#player button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(145deg, #004080, #0066cc);
+}
+
+#player i {
+    font-size: 18px;
+}
+
+#player .progress-container {
+    width: 100%;
+    padding: 10px 0;
+}
+
+#player #progress-bar {
+    width: 60%;
+    margin: 0 10px;
+    height: 5px;
+    background: #004080;
+    border-radius: 5px;
+}
+
+#player #progress-bar::-webkit-slider-thumb {
+    background: #00509e;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.input-group {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.input-group button {
+    border-radius: 20px;
+    background: #00509e;
+    color: #fff;
+}
+
+.input-group button:hover {
+    background: #004080;
+}
+
+.input-group input {
+    border-right: 0;
+    border-radius: 20px;
+    background: #e6f0ff;
+    border: 1px solid #00509e;
+}
