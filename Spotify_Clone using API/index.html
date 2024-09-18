@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botify</title>
+    <link href="./Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper d-flex flex-column min-vh-100">
+        <div class="header-container">
+            <div class="header">
+                <div class="logo">
+                    <img class="rounded-5" src="./assets/images/logo.png" alt="Botify Logo" onclick="location.reload()">
+                    <span>Botify</span>
+                </div>
+                <div class="search-bar input-group">
+                    <input type="text" id="searchSong" class="form-control" placeholder="Search for songs or artists">
+                    <button class="btn btn-outline-light" id="searchButton" type="button">Search</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid flex-grow-1">
+            <div class="content">
+                <div id="intro-text" class="intro-text text-center">
+                    <h1 class="intro-title rounded-4">BOTIFY</h1>
+                    <h3 class="intro-subtitle">This is a Spotify clone. It gives you a preview of 30 seconds of the song you searched for.</h3>
+                    <p class="intro-caption">Feel free to use it.</p>
+                </div>
+                <div class="results" id="results"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 Botify. All rights reserved.</p>
+        </div>
+    </div>
+    <script src="./Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>
